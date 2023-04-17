@@ -5,8 +5,8 @@
 body {
     margin: 20px 20px 0;
     font-family: 'Montserrat', sans-serif;
-    color: white;
-    background-color: #0d0d0d;
+    color: black;
+    background-color: #f0efef;
 }
 h1, h2, h3 {
     margin: 0;
@@ -28,18 +28,18 @@ img {
     justify-content: center;
     max-width: 400px;
     margin: auto;
-    font-size: 24px;
+    font-size: 20px;
 }
 .navbar ul {
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    gap: 10px;
     list-style-type: none;
     padding: 0;
 }
 .navbar ul li a {
     text-decoration: none;
-    color: white;
+    color: black;
     transition: .25s ease-in-out;
 }
 .navbar ul li a:hover {
@@ -48,14 +48,19 @@ img {
 }
 
 /* pages */
-#hero, #work, #about, #contact {
+.page, #work {
     max-width: 1600px;
     margin: auto;
     position: relative;
     top: 0;
 }
-#hero {
-    height: calc(100vh - 156px);
+.page, #hero  {
+    height: calc(100vh - 96px);
+}
+.page-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 400;
 }
 
 /* hero */
@@ -93,6 +98,7 @@ img {
     background-color: white;
     color: black;
     border-radius: 10px;
+    filter: drop-shadow(3px 3px 6px #d0d0d5);
     padding: 15px;
 }
 .card h1 {
@@ -102,6 +108,10 @@ img {
 .card h1, .card h3 {
     text-align: center;
     margin-bottom: 10px;
+}
+.card button a{
+    text-decoration: none;
+    color: white;
 }
 .card button {
     width: 100%;
@@ -123,7 +133,53 @@ img {
     transform: scale(.9);
 }
 
+/* about */
+#about-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+#self-portrait {
+    display: block;
+    border-radius: 50%;
+    max-width: 500px;
+    max-height: 500px;
+    margin: auto;
+    filter: drop-shadow(3px 3px 6px #d0d0d5);
+}
+#about-text {
+    max-width: 600px;
+    margin: auto;
+}
+ /* contact */
+#contact .page-header {
+    margin-top: 15%;
+}
+#contact-wrapper {
+    display: flex;
+    justify-content: center;
+}
+i {
+    transition: .25s ease-in-out;
+}
+i:hover {
+    color: salmon;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+i:active {
+    transform: scale(.9);
+}
 @media screen and (min-width: 1000px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1600px;
+        font-size: 24px;
+    }
+    .navbar ul {
+        gap: 50px
+    }
     #hero h1{
         font-size: 100px;
         padding-top: 15vh;
@@ -158,6 +214,13 @@ img {
         width: 25%;
         margin: auto
     }
+    #about-wrapper, #contact-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        max-width: 1100px;
+        margin: auto;
+    }
   }
 @media screen and (min-width: 1400px) {
     #work {
@@ -166,6 +229,12 @@ img {
         gap: 20px;
     }
 }
+
+footer {
+    text-align: center;
+}
+
+
 
 .showing {
     display: block;
