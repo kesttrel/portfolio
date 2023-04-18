@@ -13,10 +13,12 @@
     <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
-<body>
+<body id=body class="no-transition">
     <header>
         <nav class="navbar">
-            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.02 37.32" height="60" fill="black" id="logo"><path d="m23.78,37.32c-2.19-.06-3.95-1.79-4.13-3.99-.88-10.81-5.56-15.57-14.21-15.57h-1.2v19.56c-1.17,0-2.23-.47-3-1.24-.76-.77-1.24-1.83-1.24-3V4.77C0,2.42,1.9.53,4.24.53v16.94c3.84.05,7.25-.91,10.99-3.36,2.4-1.58,4.8-4.13,4.8-6.24,0-.91-.43-1.73-1.53-2.35-.87-.48-1.78-1.11-1.78-2.45,0-2.02,1.54-3.07,2.74-3.07,1.92,0,3.07,1.82,3.07,3.26,0,5.81-5.66,11.96-13.73,14.07-1.15.29,0,.29,0,.29,6.82.28,14.98,4.97,14.98,19.7Z"/><path d="m4.16,17.47h19.62V.53h0c2.34,0,4.24,1.9,4.24,4.24v28.31c0,2.34-1.9,4.24-4.24,4.24h0v-19.57s-19.62,0-19.62,0v-.28Z"/></svg>
+            <a href="index.html">
+                <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.02 37.32" height="60" fill="black" class="logo"><path d="m23.78,37.32c-2.19-.06-3.95-1.79-4.13-3.99-.88-10.81-5.56-15.57-14.21-15.57h-1.2v19.56c-1.17,0-2.23-.47-3-1.24-.76-.77-1.24-1.83-1.24-3V4.77C0,2.42,1.9.53,4.24.53v16.94c3.84.05,7.25-.91,10.99-3.36,2.4-1.58,4.8-4.13,4.8-6.24,0-.91-.43-1.73-1.53-2.35-.87-.48-1.78-1.11-1.78-2.45,0-2.02,1.54-3.07,2.74-3.07,1.92,0,3.07,1.82,3.07,3.26,0,5.81-5.66,11.96-13.73,14.07-1.15.29,0,.29,0,.29,6.82.28,14.98,4.97,14.98,19.7Z"/><path d="m4.16,17.47h19.62V.53h0c2.34,0,4.24,1.9,4.24,4.24v28.31c0,2.34-1.9,4.24-4.24,4.24h0v-19.57s-19.62,0-19.62,0v-.28Z"/></svg>
+            </a>
             <ul>
                 <li><a href="index.html" id="link1">Home</a></li>
                 <li><a href="work.html" id="link2">Work</a></li>
@@ -30,82 +32,9 @@
         <h2>Multidisciplinary Designer</h2>
         <h3><em>UI/UX, Product, and Graphic Design</em></h3>
         <img src="media/multe.svg" alt="multe berry" id="multe">
-
-        <section id="work" class="hidden">
-            <!-- cricketpro  -->
-            <section class="card">
-                <div class="card-image-container">
-                    <img src="media/cricketPro.png" alt="Cricket Pro Package" class="cardImg">
-                </div>
-                <div class="card-content-container">
-                    <h1>CricketPro Package Design</h1>
-                    <h3><em>Product Design & Branding</em></h3>
-                    <p>A package design for a cricket-based protein powder branded for environmentally-conscious consumers.</p>
-                    <button href="cricketPro">view</button>
-                </div>
-            </section>
-            <!-- bridge  -->
-            <section class="card">
-                <div class="card-image-container">
-                    <img src="media/bridgeImg.png" alt="Cricket Pro Package" class="cardImg" id="bridgeImg">
-                </div>
-                <div class="card-content-container">
-                    <h1>Bridge App Design</h1>
-                <h3><em>User Interface/User Experience</em></h3>
-                <p>A social media platform designed for real connection, real community and most importantly: <em>real support.</em></p>
-                <button href="cricketPro">view</button> 
-                </div>   
-            </section>
-            <!-- bridge  -->
-            <section class="card">
-                <div class="card-image-container">
-                    <img src="media/wokin-wabbit.png" alt="Cricket Pro Package" class="cardImg" id="bridgeImg">
-                </div>
-                <div class="card-content-container">
-                    <h1>Woking Wabbit Logo</h1>
-                    <h3><em>Graphic Design</em></h3>
-                    <p>A logo designed for a small catering business that specialized in cooking inspired by the pacific rim in Blue Lake, CA.</p>
-                    <button href="cricketPro">view</button> 
-                </div>   
-            </section>
-            <!-- klamath  -->
-            <section class="card">
-                <img src="media/klamath.jpeg" alt="Cricket Pro Package" class="cardImg" id="klamathImg">
-                <h1>Undamming of the Klamath River</h1>
-                <h3><em>Graphic Design & Illustration</em></h3>
-                <p>A multimedia illsutration created in celebration of the 2020 legislation to un-dam the Klamath River.</p>
-                <button href="cricketPro">view</button>
-            </section>
-            <!-- norge  -->
-            <section class="card">
-                <img src="media/nordNorge.jpeg" alt="Cricket Pro Package" class="cardImg" id="klamathImg">
-                <h1>Northern Norway Painting</h1>
-                <h3><em>Graphic Design & Illustration</em></h3>
-                <p>A watercolor collage of iconic places and things in the Vesterålen and Lofoten Islands of Northern Norway.</p>
-                <button href="cricketPro">view</button>
-            </section>
-            <!-- typographic explorations  -->
-            <section class="card">
-                <div class="card-image-container">
-                    <img src="media/te6.jpeg" alt="Cricket Pro Package" class="cardImg">
-                </div>
-                <div class="card-content-container">
-                    <h1>Typographic Explorations</h1>
-                    <h3><em>Graphic Design</em></h3>
-                    <p>A six-series exploration of typography. Variables increase with each iteration.</p>
-                    <button href="cricketPro">view</button>
-                </div>
-            </section>
-        </section>
-        <section id="about" class="hidden">
-            <h1>About</h1>
-        </section>
-        <section id="contact" class="hidden">
-            <h1>Contact</h1>
-        </section>
     </main>
     <footer>
-        <p>&copy; Designed and Developed by Kestrel Nergaard Hewson 2023</p>
+        <p>&copy; Designed and Developed by Kestrel Hewson 2023</p>
     </footer>
 </body>
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,10 +14,16 @@
     <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
-            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.02 37.32" height="60" fill="black" id="logo"><path d="m23.78,37.32c-2.19-.06-3.95-1.79-4.13-3.99-.88-10.81-5.56-15.57-14.21-15.57h-1.2v19.56c-1.17,0-2.23-.47-3-1.24-.76-.77-1.24-1.83-1.24-3V4.77C0,2.42,1.9.53,4.24.53v16.94c3.84.05,7.25-.91,10.99-3.36,2.4-1.58,4.8-4.13,4.8-6.24,0-.91-.43-1.73-1.53-2.35-.87-.48-1.78-1.11-1.78-2.45,0-2.02,1.54-3.07,2.74-3.07,1.92,0,3.07,1.82,3.07,3.26,0,5.81-5.66,11.96-13.73,14.07-1.15.29,0,.29,0,.29,6.82.28,14.98,4.97,14.98,19.7Z"/><path d="m4.16,17.47h19.62V.53h0c2.34,0,4.24,1.9,4.24,4.24v28.31c0,2.34-1.9,4.24-4.24,4.24h0v-19.57s-19.62,0-19.62,0v-.28Z"/></svg>
+            <a href="index.html">
+                <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.02 37.32" height="60" fill="black" class="logo">
+                    <path d="m23.78,37.32c-2.19-.06-3.95-1.79-4.13-3.99-.88-10.81-5.56-15.57-14.21-15.57h-1.2v19.56c-1.17,0-2.23-.47-3-1.24-.76-.77-1.24-1.83-1.24-3V4.77C0,2.42,1.9.53,4.24.53v16.94c3.84.05,7.25-.91,10.99-3.36,2.4-1.58,4.8-4.13,4.8-6.24,0-.91-.43-1.73-1.53-2.35-.87-.48-1.78-1.11-1.78-2.45,0-2.02,1.54-3.07,2.74-3.07,1.92,0,3.07,1.82,3.07,3.26,0,5.81-5.66,11.96-13.73,14.07-1.15.29,0,.29,0,.29,6.82.28,14.98,4.97,14.98,19.7Z" />
+                    <path d="m4.16,17.47h19.62V.53h0c2.34,0,4.24,1.9,4.24,4.24v28.31c0,2.34-1.9,4.24-4.24,4.24h0v-19.57s-19.62,0-19.62,0v-.28Z" />
+                </svg>
+            </a>
             <ul>
                 <li><a href="index.html" id="link1">Home</a></li>
                 <li><a href="work.html" id="link2">Work</a></li>
@@ -25,53 +32,72 @@
             </ul>
         </nav>
     </header>
-    <main id="piece">
+    <main class="portfolio-piece">
         <h1 class="page-header">Bridge App Design</h1>
-        <img src="media/bridgeHero.png" alt="bridge hero image" class="pieceHero">
-        <h2>Creative Brief</h2>
-        <div class="pieceContent">
-            <div>
-                <h3>The Problem</h3>
-                <p>While social media platforms like Facebook, Instagram and Tiktok have communities of parents within them, they are not optimized for the needs of a parent. These apps are designed to pull the user’s attention away from their real life and into the app. More time on the app equates to more profit for the companies behind them, but this can also encourage the formation of bad social media hygiene.
-                </p>
-                <p>Parents need technology that brings them experiences to propel them forward. Infinite scroll, among various time and profit enhancing design patterns, keep users on devices longer, often with little to no satisfaction. The employment of such design patterns should never come before the wellbeing of users.</p>
-                <p>Being a parent to young children is a large task, as these are a child’s most formative developmental years. Parents have great potential to benefit from having a social media app that supports their parental goals and offers them real connection trust in knowing the app is made with their goals front of mind — an app to bridge users to trust and connection.</p>
+        <img src="media/bridgeHero.png" alt="bridge hero image" class="pieceHeroImg">
+        <h2 class="internal-h2">Creative Brief</h2>
+        <div class="internal-content">
+            <div class="design-content">
+                <div>
+                    <h3 class="internal-h3">Logo</h3>
+                    <img src="media/bridgeLogo.svg" alt="square and circle logos">
+                </div>
+                <div>
+                    <h3 class="internal-h3">Colors</h3>
+                    <img src="media/bridgeColors.svg" alt="color blocks">
+                </div>
+                <div>
+                    <h3 class="internal-h3">Icons</h3>
+                    <img src="media/bridgeIcons.svg" alt="icons">
+                </div>
+                <!-- links -->
+                <div class="links">
+                    <div class="link">
+                        <img src="media/linkicon.svg" alt="link icon" width="20">
+                        <p><a href="https://docs.google.com/document/d/1V-MTs1pvp4uplaQyenQJ5G7G--W-yvS6UpxWKJWE2-c/edit?usp=sharing">View Full Literature Review</a></p>
+                    </div>
+                    <div class="link">
+                        <img src="media/linkicon.svg" alt="link icon" width="20">
+                        <p><a href="https://xd.adobe.com/view/e1486242-eb2b-4ce2-a646-6afc2862eb37-b41b/">View Low Fidelity Prototype(XD)</a></p>
+                    </div>
+                    <div class="link">
+                        <img src="media/linkicon.svg" alt="link icon" width="20">
+                        <p><a href="https://docs.google.com/presentation/d/1ziZSwLphjWdNgOhCXTmatSDyUtiTW6zz-bI4xER0wcc/edit?usp=sharing">SWOT Analysis</a></p>
+                    </div>
+                </div>
             </div>
+            <!-- problem, research insights, target audience   -->
             <div>
-                <h3>Target Audience</h3>
-            <p>New parents, soon-to-be/pregnant parents, postpartum mothers; parents who are experiencing major life transitions. </p>
-            <h4><em>Needs</em></h4>
-            <p>Being a parent is a highly consuming role to fill. Due to the time constraints of most parents, this app should be designed to take up as little of their time as possible. This means having a good UI/UX that directs them easily to their online communities. The app should have an algorithm that allows customization for users specific goals and interests.</p>
-            <h4><em>Goals</em></h4>
-            <p>Empathize with users and provide a space for community support. This app is not intended to replace interventions such as therapy or medical interventions for parents struggling with loneliness, mental health or postpartum. It is intended to create bridges of communication between parents facing similar parental experiences and challenges. It is not a comprehensive solution to loneliness in parenthood, but it should serve as a safe space for parents to be vulnerable about their experiences and find a sense of connection in knowing they are not alone in their struggles.</p>
-            <h4><em>Pain Points</em></h4>
-            <p>Lack of time, lack of social networks, feeling alone in difficult experiences.</p>
+                <!-- problem -->
+                <div>
+                    <h3 class="internal-h3">The Problem</h3>
+                    <p>While social media platforms like Facebook, Instagram and Tiktok have communities of parents within them, they are not optimized for the needs of a parent. These apps are designed to pull the user’s attention away from their real life and into the app. More time on the app equates to more profit for the companies behind them, but this can also encourage the formation of bad social media hygiene.
+                    </p>
+                    <p>Parents need technology that brings them experiences to propel them forward. Infinite scroll, among various time and profit enhancing design patterns, keep users on devices longer, often with little to no satisfaction. The employment of such design patterns should never come before the wellbeing of users.</p>
+                    <p>Being a parent to young children is a large task, as these are a child’s most formative developmental years. Parents have great potential to benefit from having a social media app that supports their parental goals and offers them real connection trust in knowing the app is made with their goals front of mind — an app to bridge users to trust and connection.</p>
+                </div>
+                <!-- target audience  -->
+                <div>
+                    <h3 class="internal-h3">Target Audience</h3>
+                    <p>New parents, soon-to-be/pregnant parents, postpartum mothers; parents who are experiencing major life transitions. </p>
+                    <h4><em>Needs</em></h4>
+                    <p>Being a parent is a highly consuming role to fill. Due to the time constraints of most parents, this app should be designed to take up as little of their time as possible. This means having a good UI/UX that directs them easily to their online communities. The app should have an algorithm that allows customization for users specific goals and interests.</p>
+                    <h4><em>Goals</em></h4>
+                    <p>Empathize with users and provide a space for community support. This app is not intended to replace interventions such as therapy or medical interventions for parents struggling with loneliness, mental health or postpartum. It is intended to create bridges of communication between parents facing similar parental experiences and challenges. It is not a comprehensive solution to loneliness in parenthood, but it should serve as a safe space for parents to be vulnerable about their experiences and find a sense of connection in knowing they are not alone in their struggles.</p>
+                    <h4><em>Pain Points</em></h4>
+                    <p>Lack of time, lack of social networks, feeling alone in difficult experiences.</p>
+                </div>
+                <!-- research insights  -->
+                <div>
+                    <h3 class="internal-h3">Research Insights</h3>
+                    <p>The main insight extracted from the research was that parents are more prone to loneliness during times of transition, particularly the transitions into parenthood for new parents and for single-parents. Mothers experiencing postpartum often believed that they were the only one experiencing difficulties after giving birth. I think it is reasonable to apply this to other parents in situations that feel isolating. Misperceptions about our experiences in comparison to others often makes us feel worse about our circumstances, perhaps because we believe there is something inherently wrong with us. A meaningful solution to this misperception is simply hearing other people’s stories who are experiencing similar issues and forming support groups. A social media app that provides parents in these transition periods with social connections has the potential to bridge the gap between parents experiencing isolation in their relationships and experiences. Finding a community that sees, understands and validates your perspective has the potential to lessen feelings of isolation and loneliness. </p>
+                </div>
             </div>
-            
-        </div>
-        
-        <h3>Research Insights</h3>
-        <p>The main insight extracted from the research was that parents are more prone to loneliness during times of transition, particularly the transitions into parenthood for new parents and for single-parents. Mothers experiencing postpartum often believed that they were the only one experiencing difficulties after giving birth. I think it is reasonable to apply this to other parents in situations that feel isolating. Misperceptions about our experiences in comparison to others often makes us feel worse about our circumstances, perhaps because we believe there is something inherently wrong with us. A meaningful solution to this misperception is simply hearing other people’s stories who are experiencing similar issues and forming support groups.  A social media app that provides parents in these transition periods with social connections has the potential to bridge the gap between parents experiencing isolation in their relationships and experiences. Finding a community that sees, understands and validates your perspective has the potential to lessen feelings of isolation and loneliness. </p>
-        <div class="link">
-            <img src="media/linkicon.svg" alt="link icon" width="40" height="50">
-            <p><a href="https://docs.google.com/document/d/1V-MTs1pvp4uplaQyenQJ5G7G--W-yvS6UpxWKJWE2-c/edit?usp=sharing">View Full Literature Review</a></p>
-        </div>
-        <div class="link">
-            <img src="media/linkicon.svg" alt="link icon" width="40" height="50">
-            <p><a href="https://xd.adobe.com/view/e1486242-eb2b-4ce2-a646-6afc2862eb37-b41b/">View Low Fidelity Prototype(XD)</a></p>
-        </div>
-        <div class="link">
-            <img src="media/linkicon.svg" alt="link icon" width="40" height="50">
-            <p><a href="https://docs.google.com/presentation/d/1ziZSwLphjWdNgOhCXTmatSDyUtiTW6zz-bI4xER0wcc/edit?usp=sharing">SWOT Analysis</a></p>
-        </div>
-        <div class="right">
-            <h3>Logo</h3>
-            <img src="media/logoBridge.svg" alt="square logo" width="300">
-            <h3>Colors</h3>
-            <img src="media/bridgeColors.svg" alt="color blocks" width="300">
-            <h3>Icons</h3>
-            <img src="media/iconsBridge.svg" alt="icons" width="300">
         </div>
     </main>
+    <footer>
+        <p>&copy; Designed and Developed by Kestrel Hewson 2023</p>
+    </footer>
 </body>
+
 </html>

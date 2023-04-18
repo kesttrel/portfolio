@@ -18,8 +18,19 @@ p {
 img {
     max-inline-size: 100%;
     block-size: auto;
-    border-radius: 10px;
-  }
+}
+ul,
+ol {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+    transition: .25s ease-in-out;
+}
+a:hover {
+    color: green;
+}
 
 /* navigation  */
 .navbar{
@@ -46,6 +57,9 @@ img {
     color: salmon;
     cursor: pointer;
 }
+a .logo {
+    width: 100%;
+}
 
 /* pages */
 .page, #work {
@@ -61,6 +75,9 @@ img {
     text-align: center;
     margin-bottom: 20px;
     font-weight: 400;
+}
+#work img {
+    border-radius: 10px;
 }
 
 /* hero */
@@ -169,6 +186,88 @@ i:hover {
 i:active {
     transform: scale(.9);
 }
+
+/* internal portfolio pages */
+.portfolio-piece {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    top: 0;
+}
+.pieceHeroImg {
+    display: block;
+    border-radius: 10px;
+    width: 1200px;
+    margin: auto;
+}
+#cricketProHeroImg {
+    width: 1000px;
+}
+.internal-h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    padding: 20px;
+}
+.internal-h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.links {
+    justify-content: center;
+    gap: 20px;
+}
+.link {
+    display: flex;
+    gap: 5px;
+}
+.link a {
+    font-size: 24px;
+}
+
+/* typographic exploration (te) */
+.te {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+.te img {
+    border-radius: 10px;
+}
+
+/* painting portfolio pages */
+.painting-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.painting-details img {
+    display: block;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.media {
+    text-align: center;
+}
+
+/* logo  */
+.logo-hero {
+    width: 100%;
+    margin: auto;
+    max-width: 500px;
+    padding-bottom: 50px;
+}
+.logo-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.logo-details img, .logo-hero img {
+    border-radius: 10px;
+}
 @media screen and (min-width: 1000px) {
     .navbar {
         display: flex;
@@ -218,27 +317,49 @@ i:active {
         display: flex;
         flex-direction: row;
         gap: 50px;
-        max-width: 1100px;
+        max-width: 1200px;
         margin: auto;
+    }
+    /* portfolio piece pages */
+    .internal-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5vw;
+        width: 100%;
+    }
+    .design-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        gap: 50px;
     }
   }
 @media screen and (min-width: 1400px) {
     #work {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
     }
 }
 
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
 }
 
+.no-transition * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
 
-
-.showing {
+/* .showing {
     display: block;
 }
 .hidden {
     display: none !important;
-} 
+}  */
