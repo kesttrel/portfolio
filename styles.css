@@ -61,6 +61,11 @@ a .logo {
     width: 100%;
 }
 
+#hero h3 {
+    text-transform: uppercase;
+    line-height: 1.6em;
+}
+
 /* pages */
 .page, #work {
     max-width: 1600px;
@@ -264,6 +269,7 @@ i:active {
 .logo-details img, .logo-hero img {
     border-radius: 10px;
 }
+
 @media screen and (min-width: 1000px) {
     .navbar {
         display: flex;
@@ -283,7 +289,7 @@ i:active {
         font-size: 48px;
     }
     #hero h3{
-        font-size: 30px;
+        font-size: 24px;
     }
     #work {
         display: grid;
