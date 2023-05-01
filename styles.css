@@ -158,6 +158,7 @@ a .logo {
 #self-portrait {
     display: block;
     border-radius: 50%;
+    width: 350px;
     max-width: 500px;
     max-height: 500px;
     margin: auto;
@@ -260,11 +261,6 @@ i:active {
     max-width: 500px;
     padding-bottom: 50px;
 }
-.logo-details {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-}
 .logo-details img, .logo-hero img {
     border-radius: 10px;
 }
@@ -331,6 +327,11 @@ i:active {
         display: flex;
         flex-direction: column;
         justify-content: top;
+        gap: 50px;
+    }
+    .logo-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 50px;
     }
   }
